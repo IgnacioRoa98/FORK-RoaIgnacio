@@ -8,6 +8,9 @@ function App() {
     <NavBar/>
     <ItemList titulo= "NUESTROS PRODUCTOS"/>
     </div>
+  
+      
+
     
   );
 }
