@@ -1,7 +1,7 @@
 const Carrito = () => {
     return (
         <button>
-         <img src={"/public/images/car.svg"} alt= "Carrito" />
+         <img src={"../images/car.svg"} alt= "Carrito" style={{width: "2rem"}}/>
          1
         </button>
     )

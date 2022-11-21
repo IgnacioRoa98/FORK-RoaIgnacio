@@ -11,11 +11,11 @@ function NavBar() {
           <Navbar.Brand href="#home">
             <img
               alt=""
-              src= "/src/components/IMG/logo.jpg"
+              src= "../images/log.png" 
               width="30"
               height="30"
               className="d-inline-block align-top"
-            />{'/public/images/logo.jpg'}
+            />
             TIENDA DEPORTIVA FORK
           </Navbar.Brand>
           <Nav className="me-auto">
