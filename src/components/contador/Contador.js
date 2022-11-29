@@ -1,19 +1,23 @@
 import "../contador/Contador.css";
 import { useState } from "react";
-const Contador = ({ inicio }) => {
+const Contador = ({ inicio, stock, onAdd }) => {
   const [count, setCount] = useState(inicio);
-
   const Crece = () => {
-    setCount(count + 1);
+    if (count < stock) {
+      setCount(count + 1);
+    }
   };
   const Decrecer = () => {
-    setCount(inicio);
+    if (count > 0) {
+      setCount(count - 1);
+    }
   };
   return (
     <div className="botones">
+      <button onClick={() => Crece()}>Sumar al carrito</button>
       <h2> {count} </h2>
-      <button onClick={() => Crece()}>Añadir al carrito</button>
       <button onClick={() => Decrecer()}>Eliminar del carrito</button>
+      <button onClick={() => onAdd(count)}> Agregar al carrito</button>
     </div>
   );
 };

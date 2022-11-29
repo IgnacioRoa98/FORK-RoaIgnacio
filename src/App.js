@@ -7,7 +7,7 @@ function App() {
     <div>
       <NavBar />
       <ItemList titulo="NUESTROS PRODUCTOS" />
-      <Contador inicio={0} /> 
+      <Contador inicio={0} stock= {10} /> 
     </div>
   );
 }
